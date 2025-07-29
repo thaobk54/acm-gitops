@@ -11,7 +11,7 @@ namespace: open-cluster-management
 images:
   - name: acm-custom-registry
     newName: quay.io/stolostron/acm-custom-registry
-    newTag: 2.14.0-SNAPSHOT-2025-06-23-20-27-48
+    newTag: 2.15.0-SNAPSHOT-2025-07-29-09-51-39
 
 # list of Resource Config to be Applied
 resources:

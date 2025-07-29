@@ -4,7 +4,7 @@ metadata:
   name: acm-operator-subscription
   namespace: open-cluster-management
 spec:
-  channel: release-2.14
+  channel: release-2.15
   installPlanApproval: Automatic
   name: advanced-cluster-management
   source: acm-custom-registry

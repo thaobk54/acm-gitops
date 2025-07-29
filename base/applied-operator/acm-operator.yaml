@@ -7,7 +7,7 @@ spec:
   displayName: Advanced Cluster Management
   publisher: Red Hat
   sourceType: grpc
-  image: quay.io/stolostron/acm-custom-registry:2.14.0-SNAPSHOT-2025-06-23-20-27-48
+  image: quay.io/stolostron/acm-custom-registry:2.15.0-SNAPSHOT-2025-07-29-09-51-39
   updateStrategy:
     registryPoll:
       interval: 10m
