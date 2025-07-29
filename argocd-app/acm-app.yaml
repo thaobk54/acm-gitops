@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: acm-install
+  namespace: argocd
+spec:
+  destination:
+    namespace: open-cluster-management
+    server: "https://kubernetes.default.svc"
+  source:
+    repoURL: "https://github.com/thaobk54/acm-gitops.git"
+    targetRevision: main
+    path: base
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
