@@ -2,13 +2,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: open-cluster-management
+namespace: openshift-marketplace
+
 generatorOptions:
   disableNameSuffixHash: true
 
+patchesStrategicMerge:
+- default-sa-pull-secret-patch.yaml
+
 # list of Resource Config to be Applied
 resources:
-  - example-multiclusterhub-cr.yaml
-
-commonAnnotations:
-  argocd.argoproj.io/sync-wave: "1"
+  - pull-secret.yaml
+  - serviceaccount.yaml

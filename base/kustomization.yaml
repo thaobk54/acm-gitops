@@ -7,6 +7,9 @@ generatorOptions:
 
 # list of Resource Config to be Applied
 resources:
+  - namespace.yaml
   - prereqs
+  - prereqs-marketplace
+  - applied-operator-marketplace
   - applied-operator
   - applied-mch

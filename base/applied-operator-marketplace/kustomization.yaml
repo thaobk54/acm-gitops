@@ -1,0 +1,18 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: openshift-marketplace
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+
+#images:
+#  - name: acm-custom-registry
+#    newName: quay.io/stolostron/acm-custom-registry
+#    newTag: 2.15.0-SNAPSHOT-2025-07-29-09-51-39
+
+# list of Resource Config to be Applied
+resources:
+  - acm-operator.yaml
+  - multicluster-engine.yaml
