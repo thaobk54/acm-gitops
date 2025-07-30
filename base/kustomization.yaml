@@ -9,7 +9,7 @@ generatorOptions:
 resources:
 #  - namespace.yaml
   - prereqs
-  - prereqs-marketplace
-  - applied-operator-marketplace
+ # - prereqs-marketplace
+ # - applied-operator-marketplace
   - applied-operator
   - applied-mch
